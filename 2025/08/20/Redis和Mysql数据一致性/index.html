@@ -5,7 +5,7 @@
   diytitle: {"enable":true,"leaveTitle":"Σヽ(ﾟД ﾟ; )ﾉ少侠留步！","backTitle":"♪(^∇^*)欢迎回来！"},
   LA51: undefined,
   greetingBox: undefined,
-  twikooEnvId: 'http://Eiji-Ken.github.io/',
+  twikooEnvId: 'https://eiji-ken.github.io/',
   commentBarrageConfig:undefined,
   music_page_default: "nav_music",
   root: '/',
@@ -436,7 +436,7 @@ queueMicrotask(() => {
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'http://Eiji-Ken.github.io/',
+      envId: 'https://eiji-ken.github.io/',
       region: 'ap-guangzhou',
       onCommentLoaded: () => {
         anzhiyu.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
@@ -453,7 +453,7 @@ queueMicrotask(() => {
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'http://Eiji-Ken.github.io/',
+      envId: 'https://eiji-ken.github.io/',
       region: 'ap-guangzhou',
       urls: [window.location.pathname],
       includeReply: false
@@ -495,7 +495,7 @@ queueMicrotask(() => {
   const getComment = () => {
     const runTwikoo = () => {
       twikoo.getRecentComments({
-        envId: 'http://Eiji-Ken.github.io/',
+        envId: 'https://eiji-ken.github.io/',
         region: 'ap-guangzhou',
         pageSize: 6,
         includeReply: true
