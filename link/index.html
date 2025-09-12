@@ -5,7 +5,7 @@
   diytitle: {"enable":true,"leaveTitle":"Σヽ(ﾟД ﾟ; )ﾉ少侠留步！","backTitle":"♪(^∇^*)欢迎回来！"},
   LA51: {"enable":true,"ck":"3NNaYQZ6OIw65Ulr","LingQueMonitorID":"3NNaYQZ6OIw65Ulr"},
   greetingBox: undefined,
-  twikooEnvId: 'https://twikoo-cloudflare.eijiken6.workers.dev',
+  twikooEnvId: 'https://my-twikoo-six-green.vercel.app',
   commentBarrageConfig:undefined,
   music_page_default: "nav_music",
   root: '/',
@@ -393,7 +393,7 @@ queueMicrotask(() => {
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://twikoo-cloudflare.eijiken6.workers.dev',
+      envId: 'https://my-twikoo-six-green.vercel.app',
       region: '',
       onCommentLoaded: () => {
         anzhiyu.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
@@ -410,7 +410,7 @@ queueMicrotask(() => {
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://twikoo-cloudflare.eijiken6.workers.dev',
+      envId: 'https://my-twikoo-six-green.vercel.app',
       region: '',
       urls: [window.location.pathname],
       includeReply: false
@@ -452,7 +452,7 @@ queueMicrotask(() => {
   const getComment = () => {
     const runTwikoo = () => {
       twikoo.getRecentComments({
-        envId: 'https://twikoo-cloudflare.eijiken6.workers.dev',
+        envId: 'https://my-twikoo-six-green.vercel.app',
         region: '',
         pageSize: 6,
         includeReply: true
