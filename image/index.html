@@ -5,7 +5,7 @@
   diytitle: {"enable":true,"leaveTitle":"Σヽ(ﾟД ﾟ; )ﾉ少侠留步！","backTitle":"♪(^∇^*)欢迎回来！"},
   LA51: {"enable":true,"ck":"3NNaYQZ6OIw65Ulr","LingQueMonitorID":"3NNaYQZ6OIw65Ulr"},
   greetingBox: undefined,
-  twikooEnvId: 'https://techtalkertwikoo.dpdns.org',
+  twikooEnvId: 'https://techtalker.dpdns.org',
   commentBarrageConfig:undefined,
   music_page_default: "nav_music",
   root: '/',
@@ -426,7 +426,7 @@ queueMicrotask(() => {
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://techtalkertwikoo.dpdns.org',
+      envId: 'https://techtalker.dpdns.org',
       region: '',
       onCommentLoaded: () => {
         anzhiyu.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
@@ -443,7 +443,7 @@ queueMicrotask(() => {
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://techtalkertwikoo.dpdns.org',
+      envId: 'https://techtalker.dpdns.org',
       region: '',
       urls: [window.location.pathname],
       includeReply: false
@@ -485,7 +485,7 @@ queueMicrotask(() => {
   const getComment = () => {
     const runTwikoo = () => {
       twikoo.getRecentComments({
-        envId: 'https://techtalkertwikoo.dpdns.org',
+        envId: 'https://techtalker.dpdns.org',
         region: '',
         pageSize: 6,
         includeReply: true
