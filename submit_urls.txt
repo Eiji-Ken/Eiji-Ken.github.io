@@ -1,2 +1,0 @@
-http://techtalker.cn/2025/08/15/hello-world/
-http://techtalker.cn/2025/08/24/Redis%E5%92%8CMysql%E6%95%B0%E6%8D%AE%E4%B8%80%E8%87%B4%E6%80%A7/
