@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+Allow: /link/
+Allow: /about/
+
+Disallow: /js/
+Disallow: /css/
+Disallow: /images/
+
+Sitemap: https://techtalker.cn/sitemap.xml
+Sitemap: https://techtalker.cn/baidusitemap.xml
